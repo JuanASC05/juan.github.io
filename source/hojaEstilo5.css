@@ -1,0 +1,144 @@
+<style>
+/* BLOQUE CSS COMPLETO PARA COMBOS */
+.combos {
+  padding: 2rem;
+  background-color: #fffaf0;
+  text-align: center;
+}
+
+.combos h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #d35400;
+}
+
+.combos-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.combos-galeria {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.combo-item {
+  width: 220px;
+  text-align: center;
+}
+
+.combo-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.combo-item p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #333;
+  font-size: 1rem;
+}
+
+.combo-formulario {
+  width: 100%;
+  max-width: 400px;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.combo-formulario label {
+  text-align: left;
+  font-weight: bold;
+}
+
+.combo-formulario input,
+.combo-formulario select,
+.combo-formulario button {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.combo-formulario button {
+  background-color: #ff6600;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.combo-formulario button:hover {
+  background-color: #e65c00;
+}
+
+.lista-carrito {
+  margin-top: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.lista-carrito ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-carrito li {
+  padding: 0.5rem;
+  background-color: #f0f0f0;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  text-align: left;
+  font-size: 1rem;
+}
+.mensaje-error {
+    background-color: #ffe6e6;
+    color: #c0392b;
+    padding: 0.8rem 1.2rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid #e74c3c;
+    border-radius: 5px;
+    font-weight: bold;
+    display: none;
+  }
+  
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .combos-galeria {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .combo-item {
+    width: 90%;
+  }
+
+  .combo-item img {
+    height: 200px;
+  }
+
+  .combo-formulario {
+    width: 90%;
+  }
+
+  .lista-carrito {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+</style>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="hojadeEstilo1.css" />
+    <link rel="stylesheet" href="hojadeEstilo2.css" />
+    <link rel="stylesheet" href="hojadeEstilo3.css" />
+    <link rel="stylesheet" href="hojadeEstilo4.css" />
+    <link rel="stylesheet" href="hojaEstilo5.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Eater&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="topheader0">
+      <a href="#"class="logo">
+      <img  
+      src="logos/popeyes icono.png" 
+      alt=""
+      />
+      </a>
+       <!-- BOTÓN HAMBURGUESA -->
+       <button class="menu-toggle" aria-label="Abrir menú">
+        &#9776;
+        <!-- Ícono de hamburguesa -->
+      </button>
+
+      <ul class="Menu-Horizontal">
+        <li>
+          <a href="#">Que tan loco estas por Nosotros</a>
+        
+        <ul class="Menu-Vertical">
+          <li><a href="#conocenos">Conocenos</a></li>
+          <li><a href="#preparacion">Preparacion</a></li>
+          <li><a href="#">Como deseas recibir el pedido</a></li>  
+        </ul>
+        
+        
+        </li>
+        <li><a href="#formularioregistrate">Registrate</a></li>
+        <li><a href="#fansForm">Nuestros mayores fans </a></li>
+        <li><a href="#footer">Terminos y Condiciones</a></li>
+        <li><a href="#combos">Combos</a></li>
+      
+
+      </ul>
+    </nav>
+
+     <!-- SECCIÓN CONÓCENOS DIVIDIDA EN 3 -->
+<section class="historia" id="conocenos">
+  <h2>Conócenos</h2>
+  <div class="historia-contenido">
+    
+    <!-- Imagen a un costado -->
+    <div class="historia-imagen">
+      <img
+        src="Imagenes/personal alitas.jpg"
+        alt="Promoción de pollo Popeyes"
+      />
+    </div>
+
+    <!-- Texto dividido en tres columnas -->
+    <div class="historia-columnas">
+      
+      <div class="columna">
+        <h3>Nuestra Historia</h3>
+        <p>
+          Popeyes fue fundado en 1972 en Nueva Orleans, Luisiana, por Al Copeland.
+          Originalmente se llamó “Chicken on the Run”, pero no tuvo éxito al inicio.
+        </p>
+        <p>
+          Más adelante, se relanzó como “Popeyes”, en referencia al personaje de cine
+          “Popeye Doyle” y comenzó su expansión internacional.
+        </p>
+      </div>
+
+      <div class="columna">
+        <h3>Nuestro Sabor</h3>
+        <p>
+          Conocido por su pollo frito al estilo Cajún, Popeyes destaca por marinar
+          el pollo durante 12 horas con especias intensas y sabor único.
+        </p>
+        <p>
+          Además de su pollo, ofrece complementos tradicionales como papas cajún,
+          biscuits y mac & cheese con toque sureño.
+        </p>
+      </div>
+
+      <div class="columna">
+        <h3>Nuestra Cultura</h3>
+        <p>
+          En Popeyes se valora la pasión por servir. Nuestro equipo representa
+          la calidez y el espíritu de comunidad del sur de Estados Unidos.
+        </p>
+        <p>
+          La marca promueve la diversidad y está comprometida con la inclusión
+          y el desarrollo de sus colaboradores.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- SECCIÓN PROPOSITO -->
+    <section class="preparacion" id="preparacion">
+      <h2>Preparacion de Popeyes</h2>
+      <div class="preparacion-contenido">
+        <div class="preparacion-texto">
+          <p>
+            1. Marinar:
+            El pollo se marina en una mezcla secreta de especias, incluyendo orégano, pimentón, ajo en polvo y pimienta.
+            b La marinación puede durar hasta 12 horas. 
+            2. Rebozar:
+            El pollo se reboza en harina con maicena, sal, ajo en polvo y orégano, 
+            luego se empapa en una mezcla de huevo y agua, y 
+            finalmente se revuelve en una mezcla de harina y pan rallado. 
+            
+          <p>
+            3. Freír:
+            Se cocina en aceite caliente hasta lograr una corteza dorada y crujiente. 
+            4. Servir:
+            Se sirve caliente, acompañado de salsas como mayonesa, ají y ketchup, 
+            y complementos como papas cajún. 
+          </p>
+          </p>
+        </div>
+        <div class="preparacion-video">
+          <!--video https://www.youtube.com/watch?v=jcXF58wT0jE-->
+          <!--quitamos: watch?v= reemplazamos por: embed/  -->
+          <iframe
+            src="https://www.youtube.com/embed/xjpGu__41ro"
+            title="Preparacion de Popeyes"
+            allowfullscreen
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </div>
+ 
+<!-- SECCIÓN REGISTRATE -->
+<section class="registrate">
+  <h2>REGISTRATE</h2>
+  <div class="registrate-contenido">
+    <!-- FORMULARIO -->
+    <form class="formulario-registrate" id="formularioregistrate" name ="frm">
+      <div class="form-grupo">
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" name="nombres" />
+      </div>
+
+      <div class="form-grupo">
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" />
+      </div>
+
+      <div class="form-grupo">
+        <label for="tipoDoc">Tipo de Documento:</label>
+        <select id="tipoDoc" name="tipoDoc">
+          <option value="dni">DNI</option>
+          <option value="pasaporte">Pasaporte</option>
+          <option value="carnet">Carnet de Extranjería</option>
+        </select>
+      </div>
+
+      <div class="form-grupo">
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" />
+      </div>
+
+      <div class="form-grupo">
+        <label for="fechanacimiento">Mes de nacimiento:</label>
+        <select id="fechanacimiento" name="fechanacimiento">
+          <option value="enero">Enero</option>
+          <option value="febrero">Febrero</option>
+          <option value="marzo">Marzo</option>
+          <option value="abril">Abril</option>
+          <option value="mayo">Mayo</option>
+          <option value="junio">Junio</option>
+          <option value="julio">Julio</option>
+          <option value="agosto">Agosto</option>
+          <option value="septiembre">Septiembre</option>
+          <option value="octubre">Octubre</option>
+          <option value="noviembre">Noviembre</option>
+          <option value=diciembre">Diciembre</option>
+        </select>
+      </div>
+
+      <div class="form-grupo">
+        <h2>Informacion de inicio de sesion</h2>
+        <label for="email">Correo electrónico:</label>
+        <input type="text" id="email" name="email"  />
+      </div>
+
+      <div class="form-grupo">
+        <label for="contraseña">Contraseña:</label>
+        <textarea id="contraseña" name="contraseña" rows="1"></textarea>
+      </div>
+
+      <div class="form-grupo">
+        <label>Aceptacion de terminos y condiciones:</label>
+        <div class="checkboxes">
+          <label
+            ><input type="checkbox" name="terminos" value="aceptopromociones" />
+            Acepto recibir promociones y novedades</label
+          >
+          <label
+            ><input type="checkbox" name="terminos2" value="aceptodatosdeempresa" />
+            Acepto la transferencia de datos a empresas asociadas</label
+          >
+        </div>
+      </div>
+
+      <div class="form-grupo">
+        <label>¿Eres mayor de edad?</label>
+        <div class="radios">
+          <label
+            ><input type="radio" name="confirmacion" value="si" /> Sí</label
+          >
+          <label
+            ><input type="radio" name="negacion" value="no" /> No</label
+          >
+        </div>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <!-- TEXTO A LA DERECHA -->
+    <div class="registrate-instrucciones">
+      <p>
+        Completa el formulario con tus datos. Nuestro equipo se pondrá en
+        contacto contigo según la información proporcionada.
+      </p>
+      <p>
+        Recuerda usar un correo válido y seleccionar tu tipo de documento
+        correctamente. 
+      </p>
+      
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Sección de Registro y Fans -->
+<section class="registro-notas">
+  <!-- Formulario de ingreso -->
+  <div class="registro-formulario">
+    <h2>Registrar Fan</h2>
+    <form id="fansForm" novalidate>
+      <label for="idFan">ID de Fan:</label>
+      <input type="text" id="idFan"  />
+
+      <label for="nombreFan">Nombre:</label>
+      <input type="text" id="nombreFan"  />
+
+      <label for="correoFan">Correo:</label>
+      <input type="email" id="correoFan"  />
+
+      <label for="frecuencia">Visitas este mes:</label>
+      <input type="number" id="frecuencia" min="0"  />
+
+      <label for="comentario">Comentario favorito:</label>
+      <input type="text" id="comentario" maxlength="100" />
+
+      <button type="submit">Registrar</button>
+    </form>
+  </div>
+
+  <!-- Lista visual de fans -->
+  <div class="registro-visual">
+    <h2>Top Fans del Mes</h2>
+    <ul id="listaFans"></ul>
+  </div>
+</section>
+<!-- SECCIÓN COMBOS + CARRITO -->
+<section class="combos" id="combos">
+  <h2>Combos</h2>
+  <div class="combos-contenido">
+    <!-- IMÁGENES DE COMBOS -->
+    <div class="combos-galeria">
+      <div class="combo-item">
+        <img src="Imagenes/combo-clasico_1.png" alt="Combo Clásico" />
+        <p>Combo Clásico - S/ 25.00</p>
+      </div>
+      <div class="combo-item">
+        <img src="Imagenes/combp-familiar.png" alt="Combo Familiar" />
+        <p>Combo Familiar - S/ 45.00</p>
+      </div>
+      <div class="combo-item">
+        <img src="Imagenes/combo-extra.png" alt="Combo Extra" />
+        <p>Combo Extra - S/ 35.00</p>
+      </div>
+    </div>
+
+    <!-- FORMULARIO DE PEDIDO -->
+    <form id="formCarrito" class="combo-formulario"novalidate>
+      <h3>Arma tu pedido</h3>
+      <label for="cliente">Nombre del cliente:</label>
+      <input type="text" id="cliente"  />
+
+      <label for="combo">Selecciona tu combo:</label>
+      <select id="combo" >
+        <option value="">-- Selecciona --</option>
+        <option value="Clásico">Combo Clasico - S/ 25.00</option>
+        <option value="Familiar">Combo Familiar - S/ 45.00</option>
+        <option value="Extra">Combo Extra - S/ 35.00</option>
+      </select>
+
+      <label for="cantidad">Cantidad:</label>
+      <input type="number" id="cantidad" min="1"  />
+
+      <button type="submit">Agregar al carrito</button>
+    </form>
+  </div>
+
+  <!-- LISTA DE PEDIDOS -->
+  <div class="lista-carrito">
+    <h3>Carrito de Pedidos</h3>
+    <ul id="listaPedidos"></ul>
+  </div>
+</section>
+
+----HTML
+<!-- PIE DE PAGINA -->
+
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img
+              src="logos/popeyes icono.png" 
+              alt="Logo"
+              class="footer-logo"
+            />
+            <p>POPEYES</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="documentos/Politica Privacidad Popeyes.pdf">Política de Privacidad</a>
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="documentos/Términos y condiciones Popeyes.pdf">Términos y Condiciones</a>
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="documentos/Politica Proteccion de datos popeyes.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="Iconos/icono facebook.png" 
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="Iconos/icono instagram.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="Iconos/icono visa.png"
+                alt="Visa"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="Iconos/icono twitter.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+
+
+<script src="package.js"></script>
+</body>
+
+</html>

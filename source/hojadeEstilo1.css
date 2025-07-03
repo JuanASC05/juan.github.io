@@ -1,0 +1,178 @@
+/* RESET BÁSICO */
+body {
+  margin: 0; /* Elimina el margen exterior del navegador */
+  padding: 0.5rem; /* Espaciado interno general */
+  box-sizing: border-box; /* Incluye padding y border en los tamaños */
+  font-family: "Segoe UI", sans-serif; /* Fuente base legible y moderna */
+}
+/* LOGO */
+.logo img {
+  height: 3rem; /* Altura del logo */
+  width: auto; /* Mantiene proporción automática */
+}
+/* BOTÓN HAMBURGUESA (ESCONDE EN DESKTOP) */
+.menu-toggle {
+  display: none; /* Oculto por defecto */
+  font-size: 2rem; /* Tamaño del ícono hamburguesa */
+  background: none; /* Sin fondo */
+  border: none; /* Sin bordes */
+  cursor: pointer; /* Manito al pasar el mouse */
+  margin-right: 1rem; /* Espacio entre el borde derecho */
+}
+
+.topheader0 {
+  position: fixed;
+  background-color: rgb(226, 131, 21);
+  width: 100%;
+  z-index: 100;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-right: 40rem; /* 🔸 nuevo: mueve el menú hacia la izquierda */
+}
+.Menu-Horizontal li a {
+  display: block;
+  padding: 1rem 1.25rem;
+  color: brown;
+  text-decoration: none;
+}
+.Menu-Horizontal li a:hover {
+  color: darkviolet;
+}
+.Menu-Vertical {
+  display: none; /* Oculto por defecto */
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 12rem; /* Ancho del submenú */
+  background-color: coral;
+}
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: block;
+}
+.Menu-Vertical li a {
+  display: block;
+  color: black;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.Menu-Vertical li a:hover {
+  background-color: #ffd699; /* Más visible */
+  color: darkred; /* Que también cambie el color del texto */
+}
+
+/* SECCIÓN HISTORIA */
+.historia {
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.historia h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+/* CONTENEDOR DE IMAGEN Y TEXTO */
+.historia-contenido {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* IMAGEN */
+.historia-imagen {
+  flex: 1;
+  min-width: 280px;
+}
+
+.historia-imagen img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* TEXTO EN 3 COLUMNAS */
+.historia-columnas {
+  flex: 2;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.columna {
+  flex: 1;
+  min-width: 220px;
+  max-width: 300px;
+}
+
+.columna h3 {
+  color: #d35400;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.columna p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* RESPONSIVE: MÓVILES */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Mostrar botón hamburguesa en móviles */
+  }
+
+  .menu-horizontal {
+    display: none; /* Ocultar menú horizontal por defecto */
+    flex-direction: column; /* Mostrarlo en vertical al activarse */
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 5rem; /* Debajo del menú fijo */
+    left: 0;
+  }
+
+  .menu-horizontal.active {
+    display: flex; /* Mostrar menú al activar la clase */
+  }
+
+  .menu-horizontal li {
+    border-bottom: 1px solid #ccc; /* Líneas separadoras */
+  }
+
+  .historia-contenido {
+    flex-direction: column; /* Apilar imagen y texto en móvil */
+    text-align: center;
+  }
+
+  .historia-imagen img {
+    width: 90%; /* Reduce tamaño para pantallas pequeñas */
+    margin: 0 auto;
+  }
+
+  .historia-texto {
+    font-size: 1.1rem;
+  }
+}
